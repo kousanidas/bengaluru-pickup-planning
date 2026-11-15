@@ -31,7 +31,7 @@ Option 1 saves the most fuel, but most afternoon bookings wait till the next day
 
 **The trade-off in money.** Option 2 uses about Rs 1,400 more fuel a month than Option 1, and in return 57 more of the 224 pickups are done the same day. That is roughly Rs 24 for each extra same-day pickup - the marginal cost of keeping the faster service. For Express customers who pay for speed, I think that is worth it.
 
-How sure are these numbers? The saving depends on my rule of thumb for extra stops: if a run needs 4 km for every extra stop instead of 2, the fuel saving drops to about 16% (Option 1) and 6% (Option 2). "Before" assumes every booking was picked up the same day. The numbers will also move a little once all distances are checked on Google Maps.
+How sure are these numbers? The saving depends on my rule of thumb for extra stops: if a run needs 4 km for every extra stop instead of 2, the fuel saving drops to about 16% (Option 1) and 6% (Option 2). "Before" assumes every booking was picked up the same day. Measured road distances instead of pincode estimates would also move them a little.
 
 ## How I worked through it (DMAIC)
 
@@ -52,19 +52,18 @@ How sure are these numbers? The saving depends on my rule of thumb for extra sto
 ## Disclaimers
 
 1. My original Excel from the internship was lost. This is a rebuilt version (Oct 2026) that follows the same method.
-2. The pickup log is made up for illustration. The real pickup records belonged to the company and are not used. The company name and exact location are left out.
-3. Distances and times are estimates from public pincode data (straight line x 1.3, at Bengaluru's average speed). I am checking them on Google Maps.
+2. The pickup log is made up for illustration. The real pickup records belonged to the company and are not used. The company name is left out.
+3. Distances and times are estimates from public pincode data (straight line x 1.3, at Bengaluru's average speed). They are not measured road routes.
 4. Fuel prices are public Bengaluru prices for 23 May 2024. Mileage figures are claimed figures; real mileage in traffic may be lower.
 5. Run km is a rule of thumb (2 x farthest stop + 2 km for every extra stop), not an actual route.
 6. Only pickup trips are counted. Drop-offs at the courier companies' centres are the same either way.
-7. These are not company figures. The ~10% on my earlier CV was my rough estimate at the time; the numbers here come from this rebuilt file.
+7. These are not company figures; the numbers here come from this rebuilt file.
 8. I used an AI assistant (Claude) to help rebuild the formulas and make the sample pickup log. The method and inputs are mine.
 
-## Next steps
+## What would make it more accurate
 
-- [ ] Check all distances on Google Maps
-- [ ] Power BI dashboard on the same data
-- [ ] Try a better stop order within each run (Python) and the KPIs in SQL
+- Measured road distances (Google Maps) instead of pincode estimates
+- A better stop order within each run, which would cut the run km further
 
 ## Sources
 
